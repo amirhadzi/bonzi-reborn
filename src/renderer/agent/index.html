@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; media-src 'self' blob: data:; font-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'"
+    />
+    <meta name="color-scheme" content="light dark" />
+    <title>Bonzi</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./main.js" defer></script>
+  </head>
+  <body data-state="loading">
+    <div id="stage"></div>
+
+    <div id="balloon" class="balloon modern" role="status" aria-live="polite" hidden>
+      <div id="balloon-text" class="balloon-text"></div>
+    </div>
+
+    <div id="chat-bar" class="chat-bar" role="group" aria-label="Chat with Bonzi" hidden>
+      <input
+        id="chat-input"
+        type="text"
+        autocomplete="off"
+        spellcheck="false"
+        placeholder="Ask Bonzi anything..."
+        aria-label="Message to Bonzi"
+      />
+      <button id="chat-mic" class="chat-btn mic" type="button" title="Talk to Bonzi" aria-label="Talk to Bonzi" aria-pressed="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <rect x="9" y="3" width="6" height="11" rx="3" />
+          <path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M8.5 21h7" />
+        </svg>
+      </button>
+      <button id="chat-send" class="chat-btn send" type="button" title="Send (Enter)" aria-label="Send" disabled>
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M12 19V5M5.5 11.5 12 5l6.5 6.5" />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>

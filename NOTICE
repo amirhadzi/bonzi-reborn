@@ -1,0 +1,26 @@
+BonziBuddy Reborn
+Copyright 2026 amirhadzi
+
+This project is licensed under the Apache License, Version 2.0 (see LICENSE),
+except for the third-party material listed below.
+
+Third-party material NOT covered by the Apache License
+------------------------------------------------------
+
+assets/characters/Bonzi.acs
+  The BonziBuddy Microsoft Agent character: its artwork, animations, sounds
+  and the name "Bonzi", originally published by BONZI Software. It is included
+  unmodified, for preservation and interoperability, in this unofficial and
+  non-commercial fan project. All rights remain with their respective owners.
+  If you hold rights to this material and want it removed, please open an
+  issue on the repository and it will be taken down.
+
+build/icon.ico, build/icon.png, build/tray.png
+  Generated from the character file above and subject to the same terms.
+
+Trademarks
+----------
+
+BonziBuddy is a trademark of its respective owner. Microsoft Agent is a
+trademark of Microsoft Corporation. OpenAI is a trademark of OpenAI. This
+project is not affiliated with, endorsed by or connected to any of them.

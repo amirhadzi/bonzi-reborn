@@ -1,0 +1,472 @@
+:root {
+  --font-ui: 'Segoe UI Variable Text', 'Segoe UI', system-ui, sans-serif;
+  --accent: #7646e0;
+  --accent-strong: #6233cc;
+  --accent-ring: rgba(118, 70, 224, 0.35);
+  --surface: #ffffff;
+  --text: #1e1b2b;
+  --muted: #6b6780;
+  --border: rgba(40, 24, 90, 0.14);
+  --shadow: 0 8px 28px rgba(28, 16, 70, 0.2), 0 1px 3px rgba(0, 0, 0, 0.1);
+  --hover: rgba(40, 24, 90, 0.07);
+  --danger: #d93a45;
+  --error-surface: #fff5f4;
+  --error-border: rgba(217, 58, 69, 0.38);
+  color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent: #9d7bff;
+    --accent-strong: #8a63ff;
+    --accent-ring: rgba(157, 123, 255, 0.4);
+    --surface: #2a2638;
+    --text: #f3f0fb;
+    --muted: #aaa4c0;
+    --border: rgba(255, 255, 255, 0.12);
+    --shadow: 0 8px 28px rgba(0, 0, 0, 0.45), 0 1px 3px rgba(0, 0, 0, 0.3);
+    --hover: rgba(255, 255, 255, 0.08);
+    --error-surface: #3a2430;
+    --error-border: rgba(255, 120, 130, 0.42);
+  }
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: transparent;
+  font-family: var(--font-ui);
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#stage {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+#stage canvas {
+  position: absolute;
+  pointer-events: auto;
+  image-rendering: pixelated;
+  cursor: default;
+}
+
+#stage.over canvas {
+  cursor: pointer;
+}
+
+body.dragging,
+body.dragging * {
+  cursor: grabbing !important;
+}
+
+/* ------------------------------------------------------------------ */
+/* Speech balloon                                                      */
+
+.balloon {
+  --b-bg: var(--surface);
+  --b-fg: var(--text);
+  --b-border: var(--border);
+  --tail-x: 50%;
+  --max-h: 260px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  width: max-content;
+  max-width: 340px;
+  min-width: 64px;
+  color: var(--b-fg);
+  background: var(--b-bg);
+  opacity: 0;
+  transform: translateY(var(--enter-y, 6px)) scale(0.94);
+  transform-origin: var(--tail-x) var(--origin-y, 100%);
+  transition:
+    opacity 150ms ease-out,
+    transform 200ms cubic-bezier(0.2, 0.9, 0.3, 1.25);
+}
+
+.balloon.open {
+  opacity: 1;
+  transform: none;
+}
+
+/* More text follows on this page: take the full width now so the balloon does
+   not jump wider between sentences. Keep equal to max-width (LAYOUT.balloonMaxWidth);
+   an inline max-width near a screen edge still wins. */
+.balloon.wide {
+  width: 340px;
+}
+
+.balloon.side-below {
+  --enter-y: -6px;
+  --origin-y: 0%;
+}
+
+.balloon-text {
+  max-height: calc(var(--max-h) - 22px);
+  overflow-y: auto;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+  -webkit-user-select: text;
+  user-select: text;
+  scrollbar-width: thin;
+}
+
+.balloon-text::-webkit-scrollbar {
+  width: 6px;
+}
+
+.balloon-text::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+.balloon .pending {
+  visibility: hidden;
+}
+
+.balloon .note {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.balloon.classic .note {
+  font-size: inherit;
+  color: inherit;
+  font-style: italic;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* Modern style (default) */
+
+.balloon.modern {
+  padding: 10px 14px 11px;
+  border: 1px solid var(--b-border);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  font: 14px/1.45 var(--font-ui);
+}
+
+.balloon.modern::after {
+  content: '';
+  position: absolute;
+  left: calc(var(--tail-x) - 8px);
+  width: 14px;
+  height: 14px;
+  background: var(--b-bg);
+  border: 1px solid var(--b-border);
+  transform: rotate(45deg);
+}
+
+.balloon.modern.side-above::after {
+  bottom: -8px;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  box-shadow: 4px 4px 8px -3px rgba(28, 16, 70, 0.16);
+}
+
+.balloon.modern.side-below::after {
+  top: -8px;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+
+.balloon.modern.error {
+  --b-bg: var(--error-surface);
+  --b-border: var(--error-border);
+}
+
+/* Classic style: MS Agent balloon colours and font from the ACS file */
+
+.balloon.classic {
+  --c-bg: #ffffe1;
+  --c-fg: #000000;
+  --c-border: #000000;
+  --c-font: 'MS Sans Serif', 'Microsoft Sans Serif', Tahoma, sans-serif;
+  --c-size: 13px;
+  --b-bg: var(--c-bg);
+  padding: 6px 9px 7px;
+  color: var(--c-fg);
+  border: 1px solid var(--c-border);
+  border-radius: 0;
+  box-shadow: none;
+  font-family: var(--c-font);
+  font-size: var(--c-size);
+  font-weight: var(--c-weight, 400);
+  line-height: 1.3;
+  -webkit-font-smoothing: none;
+}
+
+.balloon.classic::before,
+.balloon.classic::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.balloon.classic.side-above::before {
+  left: calc(var(--tail-x) - 6px);
+  bottom: -15px;
+  border-width: 15px 12px 0 0;
+  border-color: var(--c-border) transparent transparent transparent;
+}
+
+.balloon.classic.side-above::after {
+  left: calc(var(--tail-x) - 5px);
+  bottom: -12px;
+  border-width: 13px 10px 0 0;
+  border-color: var(--c-bg) transparent transparent transparent;
+}
+
+.balloon.classic.side-below::before {
+  left: calc(var(--tail-x) - 6px);
+  top: -15px;
+  border-width: 0 12px 15px 0;
+  border-color: transparent transparent var(--c-border) transparent;
+}
+
+.balloon.classic.side-below::after {
+  left: calc(var(--tail-x) - 5px);
+  top: -12px;
+  border-width: 0 10px 13px 0;
+  border-color: transparent transparent var(--c-bg) transparent;
+}
+
+.balloon.classic.error {
+  --c-bg: #ffe9e1;
+}
+
+/* Listening indicator */
+
+.listening-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dots {
+  display: inline-flex;
+  gap: 4px;
+  flex: none;
+}
+
+.dots i {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: dot 1.1s ease-in-out infinite;
+}
+
+.balloon.classic .dots i {
+  background: currentColor;
+  border-radius: 0;
+}
+
+.dots i:nth-child(2) {
+  animation-delay: 0.15s;
+}
+
+.dots i:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes dot {
+  0%,
+  70%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.45;
+  }
+  35% {
+    transform: translateY(-4px);
+    opacity: 1;
+  }
+}
+
+.listening-hint {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.balloon.classic .listening-hint {
+  font-size: inherit;
+  color: inherit;
+}
+
+/* ------------------------------------------------------------------ */
+/* Chat bar                                                            */
+
+.chat-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  width: 320px;
+  height: 44px;
+  padding: 0 5px 0 16px;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+  opacity: 0;
+  transform: translateY(var(--enter-y, -6px)) scale(0.96);
+  transition:
+    opacity 140ms ease-out,
+    transform 180ms cubic-bezier(0.2, 0.9, 0.3, 1.2),
+    box-shadow 120ms ease-out,
+    border-color 120ms ease-out;
+}
+
+.chat-bar.side-above {
+  --enter-y: 6px;
+}
+
+.chat-bar.open {
+  opacity: 1;
+  transform: none;
+}
+
+.chat-bar:focus-within {
+  border-color: var(--accent);
+  box-shadow:
+    var(--shadow),
+    0 0 0 3px var(--accent-ring);
+}
+
+.chat-bar input {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: inherit;
+  font: 14px var(--font-ui);
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+.chat-bar input::placeholder {
+  color: var(--muted);
+}
+
+.chat-btn {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  transition:
+    background-color 120ms ease-out,
+    color 120ms ease-out,
+    transform 80ms ease-out;
+}
+
+.chat-btn svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.chat-btn:hover:not(:disabled) {
+  background: var(--hover);
+  color: var(--text);
+}
+
+.chat-btn:active:not(:disabled) {
+  transform: scale(0.92);
+}
+
+.chat-btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.chat-btn.send {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.chat-btn.send:hover:not(:disabled) {
+  background: var(--accent-strong);
+  color: #ffffff;
+}
+
+.chat-btn.send:disabled {
+  background: var(--hover);
+  color: var(--muted);
+  cursor: default;
+  opacity: 0.8;
+}
+
+.chat-btn.mic.recording {
+  background: var(--danger);
+  color: #ffffff;
+  animation: pulse 1.4s ease-out infinite;
+}
+
+.chat-btn.mic.recording:hover {
+  background: var(--danger);
+  color: #ffffff;
+}
+
+.chat-btn.mic:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(217, 58, 69, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 0 9px rgba(217, 58, 69, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .balloon,
+  .chat-bar,
+  .chat-btn {
+    transition: none;
+  }
+  .dots i,
+  .chat-btn.mic.recording {
+    animation: none;
+  }
+}

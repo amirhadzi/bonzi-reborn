@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Engine Harness</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./main.js" defer></script>
+  </head>
+  <body data-state="loading">
+    <header>
+      <h1>Animation engine harness</h1>
+      <div id="readout" class="readout">loading...</div>
+    </header>
+
+    <section class="stages">
+      <figure>
+        <div id="stage-checker" class="stage checker"></div>
+        <figcaption>checkerboard (live canvas)</figcaption>
+      </figure>
+      <figure>
+        <div id="stage-dark" class="stage dark"></div>
+        <figcaption>dark</figcaption>
+      </figure>
+      <figure>
+        <div id="stage-light" class="stage light"></div>
+        <figcaption>light</figcaption>
+      </figure>
+    </section>
+
+    <section class="controls">
+      <fieldset>
+        <legend>Visibility</legend>
+        <button id="btn-show">Show</button>
+        <button id="btn-hide">Hide</button>
+        <button id="btn-stop">Stop all</button>
+        <label><input id="chk-now" type="checkbox" /> use playNow</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Activities</legend>
+        <div id="activities" class="row"></div>
+        <button id="btn-stop-activity">Stop activity</button>
+      </fieldset>
+
+      <fieldset>
+        <legend>Look (character's own direction)</legend>
+        <div id="looks" class="row"></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Speaking</legend>
+        <button id="btn-speak">Begin speaking</button>
+        <button id="btn-unspeak">End speaking</button>
+        <label>mouth <input id="rng-mouth" type="range" min="-1" max="6" step="1" value="-1" /> <span id="mouth-label">none</span></label>
+        <label><input id="chk-talk" type="checkbox" /> auto talk</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Idle and display</legend>
+        <label><input id="chk-idle" type="checkbox" /> idle</label>
+        <label><input id="chk-fast" type="checkbox" /> fast idle</label>
+        <button id="btn-activity">User activity</button>
+        <label>scale
+          <select id="sel-scale">
+            <option value="1">1x</option>
+            <option value="1.5">1.5x</option>
+            <option value="2" selected>2x</option>
+            <option value="3">3x</option>
+          </select>
+        </label>
+        <label><input id="chk-sound" type="checkbox" checked /> sound</label>
+        <label>volume <input id="rng-volume" type="range" min="0" max="1" step="0.05" value="0.6" /></label>
+      </fieldset>
+    </section>
+
+    <section>
+      <h2>Animations <small>(M = can speak at the end, P = rest-pose placeholder)</small></h2>
+      <div id="animations" class="grid"></div>
+    </section>
+
+    <section class="log">
+      <h2>Events</h2>
+      <pre id="events"></pre>
+    </section>
+  </body>
+</html>

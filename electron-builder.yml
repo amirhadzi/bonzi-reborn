@@ -1,0 +1,60 @@
+# electron-builder 26 configuration (Windows x64). Build with: npm run dist
+appId: io.github.amirhadzi.bonzireborn
+productName: BonziBuddy Reborn
+copyright: Copyright (c) 2026 amirhadzi. Unofficial fan project; BonziBuddy and the Bonzi character belong to their respective owners.
+
+directories:
+  output: release
+  buildResources: build
+
+files:
+  - dist/**/*
+  - package.json
+  - "!**/*.map"
+
+extraResources:
+  - from: assets/characters
+    to: characters
+    filter:
+      - "**/*.acs"
+  - from: build/icon.ico
+    to: icon.ico
+
+asar: true
+
+electronFuses:
+  runAsNode: false
+  enableCookieEncryption: true
+  enableNodeOptionsEnvironmentVariable: false
+  enableNodeCliInspectArguments: false
+  enableEmbeddedAsarIntegrityValidation: true
+  onlyLoadAppFromAsar: true
+  grantFileProtocolExtraPrivileges: false
+  loadBrowserProcessSpecificV8Snapshot: false
+
+win:
+  target:
+    - target: nsis
+      arch: [x64]
+    - target: portable
+      arch: [x64]
+  icon: build/icon.ico
+  executableName: BonziBuddyReborn
+  requestedExecutionLevel: asInvoker
+
+nsis:
+  oneClick: false
+  perMachine: false
+  selectPerMachineByDefault: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: BonziBuddy Reborn
+  artifactName: BonziBuddy-Reborn-Setup-${version}-${arch}.${ext}
+  # Uninstall hook that removes the 'Start with Windows' Run entry (see build/installer.nsh).
+  include: build/installer.nsh
+
+portable:
+  artifactName: BonziBuddy-Reborn-${version}-${arch}-portable.${ext}
+
+publish: null

@@ -1,0 +1,3905 @@
+{
+  "source": "assets/characters/Bonzi.acs",
+  "signature": "0xABCDABC3",
+  "character": {
+    "version": "2.1",
+    "guid": "{0845D27A-F341-11D3-AAE7-080036DBD503}",
+    "width": 200,
+    "height": 160,
+    "transparentIndex": 254,
+    "transparentColor": {
+      "r": 0,
+      "g": 255,
+      "b": 255
+    },
+    "flags": "0x00010220",
+    "animationSetVersion": "2.0",
+    "voice": {
+      "ttsEngineId": "{CA141FD0-AC7F-11D1-97A3-0060082730FF}",
+      "ttsModeId": "{CA141FD0-AC7F-11D1-97A3-006008273001}",
+      "speed": 157,
+      "pitch": 140,
+      "extra": {
+        "languageId": 1033,
+        "languageDialect": "",
+        "gender": 2,
+        "age": 30,
+        "style": "Business"
+      }
+    },
+    "balloon": {
+      "lines": 2,
+      "charsPerLine": 28,
+      "foreground": {
+        "r": 0,
+        "g": 0,
+        "b": 0
+      },
+      "background": {
+        "r": 255,
+        "g": 255,
+        "b": 225
+      },
+      "border": {
+        "r": 0,
+        "g": 0,
+        "b": 0
+      },
+      "fontName": "MS Sans Serif",
+      "fontHeight": -13,
+      "fontWeight": 400,
+      "italic": false,
+      "unknown": 0
+    },
+    "paletteSize": 256,
+    "trayIcon": {
+      "monoBitmapBytes": 112,
+      "colorBitmapBytes": 232,
+      "decoded": [
+        16,
+        16
+      ]
+    }
+  },
+  "localized": [
+    {
+      "languageId": 9,
+      "name": "Bonzi",
+      "description": "Hi, my name is Bonzi!  I am your interactive friend and traveling companion on the Internet!  I can surf, talk, joke, sing, browse, and search the Internet with you!",
+      "extraData": "3.0.7"
+    }
+  ],
+  "states": {
+    "GESTURINGLEFT": [
+      "GESTURELEFT"
+    ],
+    "GESTURINGRIGHT": [
+      "GESTURERIGHT"
+    ],
+    "GESTURINGUP": [
+      "GESTUREUP"
+    ],
+    "GESTURINGDOWN": [
+      "GESTUREDOWN"
+    ],
+    "LISTENING": [
+      "ALERT"
+    ],
+    "IDLINGLEVEL1": [
+      "IDLE1_1",
+      "IDLE1_3",
+      "IDLE1_5",
+      "IDLE1_6",
+      "IDLE1_9",
+      "IDLE1_11",
+      "IDLE1_13",
+      "IDLE1_14",
+      "IDLE1_15",
+      "IDLE1_4",
+      "IDLE1_4 (2)",
+      "IDLE1_5 (2)",
+      "IDLE1_24",
+      "IDLE1_12",
+      "IDLE1_25",
+      "IDLE1_1 (2)",
+      "IDLE1_1 (3)",
+      "IDLE1_9 (2)",
+      "IDLE1_9 (3)"
+    ],
+    "IDLINGLEVEL2": [
+      "IDLE1_1",
+      "IDLE1_9",
+      "IDLE1_3",
+      "IDLE1_5",
+      "IDLE1_6",
+      "IDLE1_4",
+      "IDLE1_4 (2)",
+      "IDLE1_5 (2)",
+      "IDLE1_13",
+      "IDLE1_12",
+      "IDLE1_21",
+      "IDLE1_24",
+      "IDLE1_8",
+      "IDLE1_26",
+      "IDLE1_14",
+      "IDLE1_25",
+      "IDLE1_7",
+      "IDLE1_1 (2)",
+      "IDLE1_1 (3)",
+      "IDLE1_9 (2)",
+      "IDLE1_9 (3)"
+    ],
+    "IDLINGLEVEL3": [
+      "IDLE3_1",
+      "IDLE3_2"
+    ],
+    "SPEAKING": [
+      "RESTPOSE"
+    ],
+    "SHOWING": [
+      "SHOW"
+    ],
+    "HIDING": [
+      "HIDE"
+    ],
+    "MOVINGLEFT": [
+      "MOVELEFT"
+    ],
+    "MOVINGRIGHT": [
+      "MOVERIGHT"
+    ],
+    "MOVINGUP": [
+      "MOVEUP"
+    ],
+    "MOVINGDOWN": [
+      "MOVEDOWN"
+    ]
+  },
+  "counts": {
+    "animations": 146,
+    "images": 1253,
+    "audio": 22
+  },
+  "audio": [
+    {
+      "index": 0,
+      "bytes": 41764,
+      "durationMs": 1892,
+      "sampleRate": 11025
+    },
+    {
+      "index": 1,
+      "bytes": 11746,
+      "durationMs": 1061,
+      "sampleRate": 11025
+    },
+    {
+      "index": 2,
+      "bytes": 17516,
+      "durationMs": 1585,
+      "sampleRate": 11025
+    },
+    {
+      "index": 3,
+      "bytes": 25880,
+      "durationMs": 1172,
+      "sampleRate": 11025
+    },
+    {
+      "index": 4,
+      "bytes": 6836,
+      "durationMs": 308,
+      "sampleRate": 11025
+    },
+    {
+      "index": 5,
+      "bytes": 31148,
+      "durationMs": 705,
+      "sampleRate": 22050
+    },
+    {
+      "index": 6,
+      "bytes": 9692,
+      "durationMs": 438,
+      "sampleRate": 11025
+    },
+    {
+      "index": 7,
+      "bytes": 22050,
+      "durationMs": 998,
+      "sampleRate": 11025
+    },
+    {
+      "index": 8,
+      "bytes": 11916,
+      "durationMs": 538,
+      "sampleRate": 11025
+    },
+    {
+      "index": 9,
+      "bytes": 10796,
+      "durationMs": 244,
+      "sampleRate": 22050
+    },
+    {
+      "index": 10,
+      "bytes": 13316,
+      "durationMs": 602,
+      "sampleRate": 11025
+    },
+    {
+      "index": 11,
+      "bytes": 22022,
+      "durationMs": 498,
+      "sampleRate": 22050
+    },
+    {
+      "index": 12,
+      "bytes": 31502,
+      "durationMs": 713,
+      "sampleRate": 22050
+    },
+    {
+      "index": 13,
+      "bytes": 9604,
+      "durationMs": 434,
+      "sampleRate": 11025
+    },
+    {
+      "index": 14,
+      "bytes": 28196,
+      "durationMs": 638,
+      "sampleRate": 22050
+    },
+    {
+      "index": 15,
+      "bytes": 44716,
+      "durationMs": 1013,
+      "sampleRate": 22050
+    },
+    {
+      "index": 16,
+      "bytes": 88620,
+      "durationMs": 2009,
+      "sampleRate": 22050
+    },
+    {
+      "index": 17,
+      "bytes": 11878,
+      "durationMs": 268,
+      "sampleRate": 22050
+    },
+    {
+      "index": 18,
+      "bytes": 13672,
+      "durationMs": 618,
+      "sampleRate": 11025
+    },
+    {
+      "index": 19,
+      "bytes": 15364,
+      "durationMs": 695,
+      "sampleRate": 11025
+    },
+    {
+      "index": 20,
+      "bytes": 6212,
+      "durationMs": 280,
+      "sampleRate": 11025
+    },
+    {
+      "index": 21,
+      "bytes": 6836,
+      "durationMs": 308,
+      "sampleRate": 11025
+    }
+  ],
+  "animations": [
+    {
+      "name": "DECLINE",
+      "frameCount": 20,
+      "totalDurationMs": 1510,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        0,
+        18
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        2
+      ]
+    },
+    {
+      "name": "IDLE1_9",
+      "frameCount": 5,
+      "totalDurationMs": 600,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "EXPLAIN",
+      "frameCount": 8,
+      "totalDurationMs": 700,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        6
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "IDLE1_1",
+      "frameCount": 13,
+      "totalDurationMs": 3500,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": true,
+      "hasExitBranches": false,
+      "loops": true,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "ALERT",
+      "frameCount": 2,
+      "totalDurationMs": 200,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        1
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "CONFUSED",
+      "frameCount": 18,
+      "totalDurationMs": 1700,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        16
+      ],
+      "soundIndexes": [
+        0
+      ],
+      "imagesPerFrame": [
+        0,
+        2
+      ]
+    },
+    {
+      "name": "CONGRATULATE",
+      "frameCount": 13,
+      "totalDurationMs": 1200,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        0,
+        9,
+        11
+      ],
+      "soundIndexes": [
+        1
+      ],
+      "imagesPerFrame": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "DONTRECOGNIZE",
+      "frameCount": 19,
+      "totalDurationMs": 1630,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        0,
+        17
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        2
+      ]
+    },
+    {
+      "name": "ACKNOWLEDGE",
+      "frameCount": 7,
+      "totalDurationMs": 700,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "GESTUREDOWN",
+      "frameCount": 8,
+      "totalDurationMs": 700,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        6
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "GESTURELEFT",
+      "frameCount": 8,
+      "totalDurationMs": 700,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        6
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "GESTURERIGHT",
+      "frameCount": 8,
+      "totalDurationMs": 700,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        0,
+        6
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "GESTUREUP",
+      "frameCount": 7,
+      "totalDurationMs": 600,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        0,
+        5
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "GETATTENTION2",
+      "frameCount": 16,
+      "totalDurationMs": 1500,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        0,
+        14
+      ],
+      "soundIndexes": [
+        2
+      ],
+      "imagesPerFrame": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "GREET",
+      "frameCount": 11,
+      "totalDurationMs": 1100,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        0,
+        9
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "IDLE3_1",
+      "frameCount": 26,
+      "totalDurationMs": 2720,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        0,
+        24
+      ],
+      "soundIndexes": [
+        3
+      ],
+      "imagesPerFrame": [
+        0,
+        2
+      ]
+    },
+    {
+      "name": "LOOKDOWN",
+      "frameCount": 12,
+      "totalDurationMs": 7300,
+      "transitionType": 0,
+      "transitionTypeName": "returnAnimation",
+      "returnAnimation": "LOOKDOWNRETURN",
+      "hasBranches": true,
+      "hasExitBranches": false,
+      "loops": true,
+      "endsNaturally": false,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "READING",
+      "frameCount": 57,
+      "totalDurationMs": 9200,
+      "transitionType": 0,
+      "transitionTypeName": "returnAnimation",
+      "returnAnimation": "READRETURN",
+      "hasBranches": true,
+      "hasExitBranches": false,
+      "loops": true,
+      "endsNaturally": false,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        0
+      ],
+      "soundIndexes": [
+        4,
+        5
+      ],
+      "imagesPerFrame": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "SAD",
+      "frameCount": 8,
+      "totalDurationMs": 700,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        6
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "SEARCHING",
+      "frameCount": 54,
+      "totalDurationMs": 5400,
+      "transitionType": 0,
+      "transitionTypeName": "returnAnimation",
+      "returnAnimation": "SEARCHINGRETURN",
+      "hasBranches": true,
+      "hasExitBranches": false,
+      "loops": true,
+      "endsNaturally": false,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        0
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        3
+      ]
+    },
+    {
+      "name": "SURPRISED",
+      "frameCount": 19,
+      "totalDurationMs": 1850,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": true,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        0,
+        13,
+        17
+      ],
+      "soundIndexes": [
+        6
+      ],
+      "imagesPerFrame": [
+        0,
+        2
+      ]
+    },
+    {
+      "name": "UNCERTAIN",
+      "frameCount": 12,
+      "totalDurationMs": 1100,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": true,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        6
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "WAVE",
+      "frameCount": 30,
+      "totalDurationMs": 2900,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": true,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        0,
+        19,
+        28
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "WRITERETURN",
+      "frameCount": 13,
+      "totalDurationMs": 1450,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "RESTPOSE",
+      "frameCount": 1,
+      "totalDurationMs": 100,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": true,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        0
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LOOKLEFT",
+      "frameCount": 12,
+      "totalDurationMs": 7300,
+      "transitionType": 0,
+      "transitionTypeName": "returnAnimation",
+      "returnAnimation": "LOOKLEFTRETURN",
+      "hasBranches": true,
+      "hasExitBranches": false,
+      "loops": true,
+      "endsNaturally": false,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "LOOKRIGHT",
+      "frameCount": 12,
+      "totalDurationMs": 7300,
+      "transitionType": 0,
+      "transitionTypeName": "returnAnimation",
+      "returnAnimation": "LOOKRIGHTRETURN",
+      "hasBranches": true,
+      "hasExitBranches": false,
+      "loops": true,
+      "endsNaturally": false,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "THINK",
+      "frameCount": 18,
+      "totalDurationMs": 3050,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": true,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        16
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        2
+      ]
+    },
+    {
+      "name": "IDLE1_3",
+      "frameCount": 15,
+      "totalDurationMs": 3200,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": true,
+      "hasExitBranches": true,
+      "loops": true,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        2
+      ]
+    },
+    {
+      "name": "IDLE1_5",
+      "frameCount": 15,
+      "totalDurationMs": 3800,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": true,
+      "hasExitBranches": true,
+      "loops": true,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        2
+      ]
+    },
+    {
+      "name": "IDLE1_6",
+      "frameCount": 15,
+      "totalDurationMs": 3880,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": true,
+      "hasExitBranches": true,
+      "loops": true,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        2
+      ]
+    },
+    {
+      "name": "GETATTENTION",
+      "frameCount": 16,
+      "totalDurationMs": 1500,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [
+        7
+      ],
+      "imagesPerFrame": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "IDLE1_24",
+      "frameCount": 77,
+      "totalDurationMs": 20200,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": true,
+      "hasExitBranches": true,
+      "loops": true,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        2
+      ]
+    },
+    {
+      "name": "LOOKDOWNRETURN",
+      "frameCount": 4,
+      "totalDurationMs": 400,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LOOKLEFTRETURN",
+      "frameCount": 5,
+      "totalDurationMs": 500,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LOOKRIGHTRETURN",
+      "frameCount": 5,
+      "totalDurationMs": 500,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LOOKUP",
+      "frameCount": 11,
+      "totalDurationMs": 7280,
+      "transitionType": 0,
+      "transitionTypeName": "returnAnimation",
+      "returnAnimation": "LOOKUPRETURN",
+      "hasBranches": true,
+      "hasExitBranches": false,
+      "loops": true,
+      "endsNaturally": false,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "LOOKUPRETURN",
+      "frameCount": 4,
+      "totalDurationMs": 400,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "STARTLISTENING",
+      "frameCount": 8,
+      "totalDurationMs": 700,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        0,
+        6
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "STOPLISTENING",
+      "frameCount": 9,
+      "totalDurationMs": 800,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        0,
+        7
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "SUNGLASSESRETURN",
+      "frameCount": 20,
+      "totalDurationMs": 1900,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "SUNGLASSESCONTINUED",
+      "frameCount": 52,
+      "totalDurationMs": 12600,
+      "transitionType": 0,
+      "transitionTypeName": "returnAnimation",
+      "returnAnimation": "SUNGLASSESRETURN",
+      "hasBranches": true,
+      "hasExitBranches": true,
+      "loops": true,
+      "endsNaturally": false,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "HUG",
+      "frameCount": 33,
+      "totalDurationMs": 3740,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": true,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [
+        8
+      ],
+      "imagesPerFrame": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "IDLE3_2",
+      "frameCount": 47,
+      "totalDurationMs": 20140,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": true,
+      "hasExitBranches": true,
+      "loops": true,
+      "endsNaturally": false,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        0
+      ],
+      "soundIndexes": [
+        4
+      ],
+      "imagesPerFrame": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "IDLE1_7",
+      "frameCount": 46,
+      "totalDurationMs": 17800,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": true,
+      "hasExitBranches": true,
+      "loops": true,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        2
+      ]
+    },
+    {
+      "name": "IDLE1_11",
+      "frameCount": 46,
+      "totalDurationMs": 5900,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": true,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        2
+      ]
+    },
+    {
+      "name": "IDLE1_13",
+      "frameCount": 69,
+      "totalDurationMs": 14020,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": true,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        3
+      ]
+    },
+    {
+      "name": "SEARCH",
+      "frameCount": 62,
+      "totalDurationMs": 6000,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": true,
+      "hasExitBranches": true,
+      "loops": true,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        0,
+        60
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        3
+      ]
+    },
+    {
+      "name": "BLOWKISS",
+      "frameCount": 19,
+      "totalDurationMs": 2080,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [
+        9,
+        10
+      ],
+      "imagesPerFrame": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "BLINK",
+      "frameCount": 5,
+      "totalDurationMs": 600,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "IDLE1_14",
+      "frameCount": 36,
+      "totalDurationMs": 9000,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": true,
+      "hasExitBranches": true,
+      "loops": true,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        2
+      ]
+    },
+    {
+      "name": "READ",
+      "frameCount": 31,
+      "totalDurationMs": 4300,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        0,
+        30
+      ],
+      "soundIndexes": [
+        4
+      ],
+      "imagesPerFrame": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "READRETURN",
+      "frameCount": 25,
+      "totalDurationMs": 2560,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        24
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "READCONTINUED",
+      "frameCount": 22,
+      "totalDurationMs": 4750,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        21
+      ],
+      "soundIndexes": [
+        5
+      ],
+      "imagesPerFrame": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "WRITECONTINUED",
+      "frameCount": 11,
+      "totalDurationMs": 1200,
+      "transitionType": 0,
+      "transitionTypeName": "returnAnimation",
+      "returnAnimation": "WRITINGRETURN",
+      "hasBranches": true,
+      "hasExitBranches": false,
+      "loops": true,
+      "endsNaturally": false,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [
+        11
+      ],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "READLOOKUP",
+      "frameCount": 35,
+      "totalDurationMs": 4950,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        0,
+        34
+      ],
+      "soundIndexes": [
+        4
+      ],
+      "imagesPerFrame": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "READLOOKUPCONTINUED",
+      "frameCount": 34,
+      "totalDurationMs": 5800,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": true,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        33
+      ],
+      "soundIndexes": [
+        5
+      ],
+      "imagesPerFrame": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "SEARCHINGRETURN",
+      "frameCount": 7,
+      "totalDurationMs": 600,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        6
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "READLOOKUPRETURN",
+      "frameCount": 25,
+      "totalDurationMs": 2530,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        24
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "WRITEPRE",
+      "frameCount": 13,
+      "totalDurationMs": 1450,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        0,
+        12
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "WRITEONCE",
+      "frameCount": 13,
+      "totalDurationMs": 1450,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [
+        11
+      ],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "WRITEONCEAGAIN",
+      "frameCount": 9,
+      "totalDurationMs": 1200,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [
+        11
+      ],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "WRITEPAUSE",
+      "frameCount": 5,
+      "totalDurationMs": 500,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        4
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "WRITE",
+      "frameCount": 37,
+      "totalDurationMs": 4300,
+      "transitionType": 0,
+      "transitionTypeName": "returnAnimation",
+      "returnAnimation": "WRITERETURN",
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        0,
+        12,
+        36
+      ],
+      "soundIndexes": [
+        11
+      ],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "WRITING",
+      "frameCount": 35,
+      "totalDurationMs": 5200,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": true,
+      "hasExitBranches": true,
+      "loops": true,
+      "endsNaturally": false,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        0,
+        12
+      ],
+      "soundIndexes": [
+        11
+      ],
+      "imagesPerFrame": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "WRITINGRETURN",
+      "frameCount": 17,
+      "totalDurationMs": 1850,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        4
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MAILCHECKEMPTY",
+      "frameCount": 20,
+      "totalDurationMs": 2600,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [
+        12
+      ],
+      "imagesPerFrame": [
+        1,
+        3
+      ]
+    },
+    {
+      "name": "MAILCHECKFULL",
+      "frameCount": 29,
+      "totalDurationMs": 4300,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        28
+      ],
+      "soundIndexes": [
+        12
+      ],
+      "imagesPerFrame": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "MAILRETURN",
+      "frameCount": 8,
+      "totalDurationMs": 1000,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MAILREAD",
+      "frameCount": 27,
+      "totalDurationMs": 3850,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        26
+      ],
+      "soundIndexes": [
+        13
+      ],
+      "imagesPerFrame": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "MAILNEXT",
+      "frameCount": 19,
+      "totalDurationMs": 2800,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        18
+      ],
+      "soundIndexes": [
+        13
+      ],
+      "imagesPerFrame": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "DOMAGIC1",
+      "frameCount": 1,
+      "totalDurationMs": 100,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": true,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "DOMAGIC2",
+      "frameCount": 1,
+      "totalDurationMs": 100,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": true,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "GETATTENTIONCONTINUED",
+      "frameCount": 1,
+      "totalDurationMs": 100,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": true,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "GETATTENTIONRETURN",
+      "frameCount": 1,
+      "totalDurationMs": 100,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": true,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "HEARING1",
+      "frameCount": 1,
+      "totalDurationMs": 100,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": true,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "HEARING2",
+      "frameCount": 1,
+      "totalDurationMs": 100,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": true,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "HEARING3",
+      "frameCount": 1,
+      "totalDurationMs": 100,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": true,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "IDLE3_3",
+      "frameCount": 1,
+      "totalDurationMs": 100,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": true,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LOOKDOWNBLINK",
+      "frameCount": 1,
+      "totalDurationMs": 100,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": true,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LOOKDOWNLEFT",
+      "frameCount": 1,
+      "totalDurationMs": 100,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": true,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LOOKDOWNLEFTBLINK",
+      "frameCount": 1,
+      "totalDurationMs": 100,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": true,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LOOKDOWNLEFTRETURN",
+      "frameCount": 1,
+      "totalDurationMs": 100,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": true,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LOOKDOWNRIGHT",
+      "frameCount": 1,
+      "totalDurationMs": 100,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": true,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LOOKDOWNRIGHTBLINK",
+      "frameCount": 1,
+      "totalDurationMs": 100,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": true,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LOOKDOWNRIGHTRETURN",
+      "frameCount": 1,
+      "totalDurationMs": 100,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": true,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LOOKLEFTBLINK",
+      "frameCount": 1,
+      "totalDurationMs": 100,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": true,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LOOKRIGHTBLINK",
+      "frameCount": 1,
+      "totalDurationMs": 100,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": true,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LOOKUPBLINK",
+      "frameCount": 1,
+      "totalDurationMs": 100,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": true,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LOOKUPLEFT",
+      "frameCount": 1,
+      "totalDurationMs": 100,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": true,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LOOKUPLEFTBLINK",
+      "frameCount": 1,
+      "totalDurationMs": 100,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": true,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LOOKUPLEFTRETURN",
+      "frameCount": 1,
+      "totalDurationMs": 100,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": true,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LOOKUPRIGHT",
+      "frameCount": 1,
+      "totalDurationMs": 100,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": true,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LOOKUPRIGHTBLINK",
+      "frameCount": 1,
+      "totalDurationMs": 100,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": true,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "LOOKUPRIGHTRETURN",
+      "frameCount": 1,
+      "totalDurationMs": 100,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": true,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "PROCESS",
+      "frameCount": 1,
+      "totalDurationMs": 100,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": true,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "PROCESSING",
+      "frameCount": 1,
+      "totalDurationMs": 100,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": true,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "SUGGEST",
+      "frameCount": 1,
+      "totalDurationMs": 100,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": true,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "THINKING",
+      "frameCount": 1,
+      "totalDurationMs": 100,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": true,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "HEADPHONESCONTINUED",
+      "frameCount": 60,
+      "totalDurationMs": 12020,
+      "transitionType": 0,
+      "transitionTypeName": "returnAnimation",
+      "returnAnimation": "HEADPHONESRETURN",
+      "hasBranches": true,
+      "hasExitBranches": false,
+      "loops": true,
+      "endsNaturally": false,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        0
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "HEADPHONESRETURN",
+      "frameCount": 18,
+      "totalDurationMs": 2100,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        17
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "BANANA",
+      "frameCount": 69,
+      "totalDurationMs": 7200,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        0,
+        67
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "MAILCHECK",
+      "frameCount": 9,
+      "totalDurationMs": 900,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [
+        14
+      ],
+      "imagesPerFrame": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "SCOUT",
+      "frameCount": 11,
+      "totalDurationMs": 1100,
+      "transitionType": 0,
+      "transitionTypeName": "returnAnimation",
+      "returnAnimation": "SCOUTRETURN",
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        10
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "SCOUTLEFT",
+      "frameCount": 12,
+      "totalDurationMs": 3700,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "SCOUTRIGHT",
+      "frameCount": 12,
+      "totalDurationMs": 5000,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "BUTTERNUT",
+      "frameCount": 95,
+      "totalDurationMs": 10300,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": true,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        3
+      ]
+    },
+    {
+      "name": "JUGGLE",
+      "frameCount": 62,
+      "totalDurationMs": 6700,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "EXPLAIN2",
+      "frameCount": 10,
+      "totalDurationMs": 900,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        8
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "EXPLAIN3",
+      "frameCount": 8,
+      "totalDurationMs": 700,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        6
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "IDLE1_8",
+      "frameCount": 24,
+      "totalDurationMs": 6100,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": true,
+      "hasExitBranches": true,
+      "loops": true,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        0,
+        22
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        2
+      ]
+    },
+    {
+      "name": "HANDSBEHIND",
+      "frameCount": 10,
+      "totalDurationMs": 900,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        0,
+        8
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "IDLE1_15",
+      "frameCount": 17,
+      "totalDurationMs": 2300,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": true,
+      "hasExitBranches": true,
+      "loops": true,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "IDLE1_4",
+      "frameCount": 15,
+      "totalDurationMs": 3600,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": true,
+      "hasExitBranches": true,
+      "loops": true,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        2
+      ]
+    },
+    {
+      "name": "WINK",
+      "frameCount": 13,
+      "totalDurationMs": 1800,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        0,
+        12
+      ],
+      "soundIndexes": [
+        15
+      ],
+      "imagesPerFrame": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "GIGGLE",
+      "frameCount": 22,
+      "totalDurationMs": 2300,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        0,
+        21
+      ],
+      "soundIndexes": [
+        16
+      ],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "BANANAMISS",
+      "frameCount": 64,
+      "totalDurationMs": 11330,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [
+        17
+      ],
+      "imagesPerFrame": [
+        0,
+        2
+      ]
+    },
+    {
+      "name": "IDLE1_25",
+      "frameCount": 129,
+      "totalDurationMs": 18080,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": true,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        0,
+        67
+      ],
+      "soundIndexes": [
+        17
+      ],
+      "imagesPerFrame": [
+        0,
+        2
+      ]
+    },
+    {
+      "name": "IDLE1_12",
+      "frameCount": 100,
+      "totalDurationMs": 13000,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": true,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        3
+      ]
+    },
+    {
+      "name": "PLEASEDHARD",
+      "frameCount": 16,
+      "totalDurationMs": 1800,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        3
+      ]
+    },
+    {
+      "name": "PLEASED",
+      "frameCount": 44,
+      "totalDurationMs": 5200,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": true,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        3
+      ]
+    },
+    {
+      "name": "IDLE1_4 (2)",
+      "frameCount": 15,
+      "totalDurationMs": 3700,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": true,
+      "hasExitBranches": true,
+      "loops": true,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        2
+      ]
+    },
+    {
+      "name": "IDLE1_5 (2)",
+      "frameCount": 15,
+      "totalDurationMs": 3800,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": true,
+      "hasExitBranches": true,
+      "loops": true,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        2
+      ]
+    },
+    {
+      "name": "IDLE1_26",
+      "frameCount": 80,
+      "totalDurationMs": 14220,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": true,
+      "hasExitBranches": true,
+      "loops": true,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        0,
+        1,
+        78
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        2
+      ]
+    },
+    {
+      "name": "EXPLAIN4",
+      "frameCount": 8,
+      "totalDurationMs": 700,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        6
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        1
+      ]
+    },
+    {
+      "name": "SHOOSH",
+      "frameCount": 15,
+      "totalDurationMs": 1950,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        0,
+        14
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "UNBELIEVABLE",
+      "frameCount": 17,
+      "totalDurationMs": 1500,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": true,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        11
+      ],
+      "soundIndexes": [
+        6
+      ],
+      "imagesPerFrame": [
+        0,
+        2
+      ]
+    },
+    {
+      "name": "SHOW",
+      "frameCount": 27,
+      "totalDurationMs": 2700,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [
+        18
+      ],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "HIDE",
+      "frameCount": 26,
+      "totalDurationMs": 2600,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [
+        19
+      ],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MOVEDOWN",
+      "frameCount": 8,
+      "totalDurationMs": 800,
+      "transitionType": 0,
+      "transitionTypeName": "returnAnimation",
+      "returnAnimation": "MOVEDOWNRETURN",
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [
+        20
+      ],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MOVEDOWNRETURN",
+      "frameCount": 9,
+      "totalDurationMs": 900,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [
+        21
+      ],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MOVELEFT",
+      "frameCount": 10,
+      "totalDurationMs": 1000,
+      "transitionType": 0,
+      "transitionTypeName": "returnAnimation",
+      "returnAnimation": "MOVELEFTRETURN",
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [
+        20
+      ],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MOVELEFTRETURN",
+      "frameCount": 8,
+      "totalDurationMs": 800,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [
+        21
+      ],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MOVERIGHT",
+      "frameCount": 10,
+      "totalDurationMs": 1000,
+      "transitionType": 0,
+      "transitionTypeName": "returnAnimation",
+      "returnAnimation": "MOVERIGHTRETURN",
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [
+        20
+      ],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MOVERIGHTRETURN",
+      "frameCount": 8,
+      "totalDurationMs": 800,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [
+        21
+      ],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MOVEUP",
+      "frameCount": 8,
+      "totalDurationMs": 800,
+      "transitionType": 0,
+      "transitionTypeName": "returnAnimation",
+      "returnAnimation": "MOVEUPRETURN",
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [
+        20
+      ],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "MOVEUPRETURN",
+      "frameCount": 8,
+      "totalDurationMs": 800,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [
+        21
+      ],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "HIDESHOW",
+      "frameCount": 52,
+      "totalDurationMs": 6300,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [
+        18,
+        19
+      ],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "PLEASEDSOFT",
+      "frameCount": 30,
+      "totalDurationMs": 3500,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": true,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        2
+      ]
+    },
+    {
+      "name": "IDLE1_21",
+      "frameCount": 53,
+      "totalDurationMs": 7250,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": true,
+      "hasExitBranches": true,
+      "loops": true,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        0,
+        12,
+        39
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        2
+      ]
+    },
+    {
+      "name": "IDLE1_1 (2)",
+      "frameCount": 13,
+      "totalDurationMs": 3500,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": true,
+      "hasExitBranches": false,
+      "loops": true,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "IDLE1_1 (3)",
+      "frameCount": 13,
+      "totalDurationMs": 3500,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": true,
+      "hasExitBranches": false,
+      "loops": true,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    },
+    {
+      "name": "IDLE1_9 (2)",
+      "frameCount": 5,
+      "totalDurationMs": 600,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "IDLE1_9 (3)",
+      "frameCount": 5,
+      "totalDurationMs": 600,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": false,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "SCOUTALERT",
+      "frameCount": 13,
+      "totalDurationMs": 1300,
+      "transitionType": 1,
+      "transitionTypeName": "exitBranches",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [
+        "closed",
+        "wide1",
+        "wide2",
+        "wide3",
+        "wide4",
+        "medium",
+        "narrow"
+      ],
+      "overlayFrames": [
+        11
+      ],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        0,
+        2
+      ]
+    },
+    {
+      "name": "SCOUTRETURN",
+      "frameCount": 6,
+      "totalDurationMs": 600,
+      "transitionType": 2,
+      "transitionTypeName": "none",
+      "returnAnimation": null,
+      "hasBranches": false,
+      "hasExitBranches": true,
+      "loops": false,
+      "endsNaturally": true,
+      "isRestPoseStub": false,
+      "mouthOverlayTypes": [],
+      "overlayFrames": [],
+      "soundIndexes": [],
+      "imagesPerFrame": [
+        1,
+        1
+      ]
+    }
+  ]
+}

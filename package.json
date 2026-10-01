@@ -1,0 +1,48 @@
+{
+  "name": "bonzi-reborn",
+  "productName": "BonziBuddy Reborn",
+  "version": "0.1.0",
+  "description": "A clean, modern, AI-powered recreation of BonziBuddy. Bring your own OpenAI key.",
+  "private": true,
+  "type": "module",
+  "main": "dist/main/main.cjs",
+  "author": "amirhadzi",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/amirhadzi/bonzi-reborn",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/amirhadzi/bonzi-reborn.git"
+  },
+  "bugs": {
+    "url": "https://github.com/amirhadzi/bonzi-reborn/issues"
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "watch": "node scripts/build.mjs --watch",
+    "start": "electron .",
+    "dev": "node scripts/build.mjs && electron .",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "icon": "node scripts/make-icon.ts",
+    "dist": "node scripts/make-icon.ts && node scripts/build.mjs --minify && electron-builder --win --x64 --publish never && node scripts/audit-release.mjs",
+    "mock:openai": "node scripts/mock-openai.mjs",
+    "acs:dump": "node scripts/acs-dump.ts",
+    "e2e": "node scripts/e2e.mjs",
+    "harness": "node scripts/harness.mjs",
+    "audit:release": "node scripts/audit-release.mjs",
+    "qa:input": "node scripts/build.mjs && node scripts/qa-real-input.mjs dev"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.0",
+    "@types/pngjs": "^6.0.5",
+    "electron": "^44.5.1",
+    "electron-builder": "^26.15.3",
+    "esbuild": "^0.28.2",
+    "pngjs": "^7.0.0",
+    "typescript": "5.9",
+    "vitest": "^5.0.3"
+  }
+}

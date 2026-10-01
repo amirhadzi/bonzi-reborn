@@ -1,0 +1,151 @@
+:root {
+  --bg: #f4f4f6;
+  --fg: #1c1c22;
+  --muted: #6b6b78;
+  --panel: #ffffff;
+  --border: #d9d9e0;
+  --accent: #6a3fd8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 16px;
+  background: var(--bg);
+  color: var(--fg);
+  font: 13px/1.4 system-ui, 'Segoe UI', sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+h1 {
+  font-size: 18px;
+  margin: 0 0 8px;
+}
+
+h2 {
+  font-size: 14px;
+  margin: 16px 0 8px;
+}
+
+.readout {
+  font-family: ui-monospace, Consolas, monospace;
+  color: var(--muted);
+}
+
+.stages {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.stage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  min-height: 160px;
+  border: 1px solid var(--border);
+}
+
+.stage canvas {
+  display: block;
+}
+
+.checker {
+  background-color: #fff;
+  background-image:
+    linear-gradient(45deg, #c8c8c8 25%, transparent 25%),
+    linear-gradient(-45deg, #c8c8c8 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #c8c8c8 75%),
+    linear-gradient(-45deg, transparent 75%, #c8c8c8 75%);
+  background-size: 16px 16px;
+  background-position: 0 0, 0 8px, 8px -8px, -8px 0;
+}
+
+.dark {
+  background: #16161c;
+}
+
+.light {
+  background: #fafafa;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+fieldset {
+  border: 1px solid var(--border);
+  background: var(--panel);
+  padding: 6px 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+
+legend {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+button {
+  font: inherit;
+  padding: 3px 8px;
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: var(--accent);
+}
+
+button.placeholder {
+  color: var(--muted);
+  font-style: italic;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+pre {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  padding: 8px;
+  max-height: 240px;
+  overflow: auto;
+  margin: 0;
+}
